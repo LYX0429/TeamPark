@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, redirect
 from django.contrib import auth
 from django.views.decorators.csrf import csrf_exempt
-from env_page import models
+from pages import models
 
 # Create your views here.
 @csrf_exempt
