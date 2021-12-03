@@ -7,14 +7,14 @@ from django.views.decorators.csrf import csrf_exempt
 def index(request):
     error = False
     if request.user.is_active:
-        return render_to_response('env_index.html', {'username': request.user.username})
+        return render_to_response('dashboard.html', {'username': request.user.username})
     elif 'username' and 'password' in request.POST:
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
         user = auth.authenticate(username=username, password=password)
         if user is not None and user.is_active:
             auth.login(request, user)
-            return render_to_response('env_index.html', {'username': request.user.username})
+            return render_to_response('dashboard.html', {'username': request.user.username})
         else:
             error = True
     else:

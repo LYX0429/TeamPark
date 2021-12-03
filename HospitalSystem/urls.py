@@ -19,8 +19,6 @@ from django.urls import re_path
 
 from pages.views import home as home_views
 from pages.views import table as table_views
-from pages.views import form as form_views
-from util.views import email as email_views
 
 
 urlpatterns = [
@@ -30,14 +28,11 @@ urlpatterns = [
     path('index/', home_views.index),
     path('login/', home_views.login),
     path('logout/', home_views.logout),
-    path('env/<object_type>/', table_views.env),
-    path('env/<object_type>/new/', table_views.new_edit),
-    path('env/<object_type>/new/submit/', table_views.new_submit),
-    path('env/<object_type>/new/delete/', table_views.new_delete),
-    path('env/<object_type>/<int:object_id>/', table_views.edit),
-    path('env/<object_type>/<int:object_id>/submit/', table_views.submit),
-    path('env/<object_type>/<int:object_id>/delete/', table_views.delete),
-    path('form/upload/', form_views.upload),
-    path('email/send/', email_views.SendMail),
-    path('email/send/submit/', email_views.EmailSubmit),
+    path('form/<object_type>/', table_views.form),
+    path('form/<object_type>/new/', table_views.new_edit),
+    path('form/<object_type>/new/submit/', table_views.new_submit),
+    path('form/<object_type>/new/delete/', table_views.new_delete),
+    path('form/<object_type>/<int:object_id>/', table_views.edit),
+    path('form/<object_type>/<int:object_id>/submit/', table_views.submit),
+    path('form/<object_type>/<int:object_id>/delete/', table_views.delete),
 ]

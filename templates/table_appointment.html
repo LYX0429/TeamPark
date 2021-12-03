@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TeamPark | Network</title>
+    <title>EzSchedule</title>
 
     <!-- Bootstrap -->
     <link href="/static/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,15 +32,15 @@
     <div class="container body">
       <div class="main_container">
 
-        {% include 'env_side_bar.html' %}
-        {% include 'env_top_bar.html' %}
+        {% include 'side_bar.html' %}
+        {% include 'top_bar.html' %}
 
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Environment Page</h3>
+                <h3>Appointment History</h3>
                 <br>
               </div>
             </div>
@@ -51,9 +51,8 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Network</h2>
                     <ul class="nav navbar-right panel_toolbox">
-                      <li><button class="btn btn-danger" type="button" onclick="javascrtpt:window.location.href='new/'">Add</button>
+                      <li><button class="btn btn-success" type="button" onclick="javascrtpt:window.location.href='new/'">Schedule New Appointment</button>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -62,45 +61,21 @@
                     <table id="datatable" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Name</th>
-                          <th>Describe</th>
-                          <th>Vlan</th>
-                          <th>Bond</th>
-                          <th>Ethnet</th>
-                          <th>Bridge Name</th>
-                          <th>Servers</th>
-                          <th>IPv4</th>
-                          <th>IPv4_prefix</th>
-                          <th>IPv4_gw</th>
-                          <th>IPv6</th>
-                          <th>IPv6_prefix</th>
-                          <th>IPv6_gw</th>
-                          <th>Create Date</th>
-                          <th>Update Date</th>
+                          <th>Doctor Name</th>
+                          <th>Department</th>
+                          <th>Date</th>
                           <th>Edit</th>
                         </tr>
                       </thead>
 
                       <tbody>
-                          {% if networks %}
-                            {% for network in networks %}
+                          {% if objs %}
+                            {% for obj in objs %}
                               <tr class="even pointer">
-                                <td class=" ">{{ network.network_name }}</td>
-                                <td class=" ">{{ network.network_desc }}</td>
-                                <td class=" ">{{ network.vlan }}</td>
-                                <td class=" ">{{ network.bond }}</td>
-                                <td class=" ">{{ network.ethnet }}</td>
-                                <td class=" ">{{ network.bridge_name }}</td>
-                                <td class=" "><a href="{{ network.id }}/server/"><u style="color: #66afe9;">{{ network.server }}</u></a></td>
-                                <td class=" ">{{ network.ipv4 }}</td>
-                                <td class=" ">{{ network.ipv4_prefix }}</td>
-                                <td class=" ">{{ network.ipv4_gw }}</td>
-                                <td class=" ">{{ network.ipv6 }}</td>
-                                <td class=" ">{{ network.ipv6_prefix }}</td>
-                                <td class=" ">{{ network.ipv6_gw }}</td>
-                                <td class=" ">{{ network.create_date }}</td>
-                                <td class=" ">{{ network.update_date }}</td>
-                                <td class=" "><a href="{{ network.id }}/"><u style="color: #66afe9;">Edit</u></a>
+                                <td class=" ">{{ obj.doctor.name }}</td>
+                                <td class=" ">{{ obj.doctor.department }}</td>
+                                <td class=" ">{{ obj.date }}</td>
+                                <td class=" "><a href="{{ obj.id }}/"><u style="color: #66afe9;">Edit</u></a>
                                 </td>
                               </tr>
                             {% endfor %}
@@ -120,7 +95,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            HCI Group 06
           </div>
           <div class="clearfix"></div>
         </footer>
