@@ -14,10 +14,6 @@ class Doctor(models.Model):
 
 class Appointment(models.Model):
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE)
-    name = models.CharField(max_length=50)
-    birthday = models.CharField(max_length=50)
-    injury = models.CharField(max_length=50)
-    comment = models.CharField(max_length=300)
     date = models.DateTimeField(blank=True)
 
     def __str__(self):

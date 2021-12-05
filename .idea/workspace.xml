@@ -2,35 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b8c7903-0b3c-4c4f-af14-2e14264aa0cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/edit2_appointment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalSystem/static/gentelella/build/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalSystem/static/gentelella/build/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HospitalSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalSystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/migrations/0002_auto_20211204_0625.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/views/form.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/views/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/views/home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/views/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/views/table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_edit_network.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_appointment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_form_upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_side_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/side_bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_table_network.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/table_appointment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/env_top_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/top_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit_appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_appointment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/views/email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/side_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/side_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/table_appointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/table_appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/util_email_sender.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/util_email_sender.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,9 +40,31 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liyix\PycharmProjects\EzSchedule\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7b8c7903-0b3c-4c4f-af14-2e14264aa0cb" name="Changes" comment="" />
@@ -54,15 +72,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638566963644</updated>
+      <workItem from="1638655353487" duration="1604000" />
+      <workItem from="1638657015343" duration="1782000" />
+      <workItem from="1638658848070" duration="1781000" />
+      <workItem from="1638660673532" duration="1779000" />
+      <workItem from="1638662482418" duration="1783000" />
+      <workItem from="1638664293547" duration="800000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

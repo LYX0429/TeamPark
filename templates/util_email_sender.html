@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
-    <title>TeamPark | Email</title>
+    <title>Ezschedule</title>
 
     <!-- Bootstrap -->
     <link href="/static/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,15 +36,15 @@
     <div class="container body">
       <div class="main_container">
 
-        {% include 'env_side_bar.html' %}
-        {% include 'env_top_bar.html' %}
+        {% include 'side_bar.html' %}
+        {% include 'top_bar.html' %}
 
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Send Email </h3>
+                <h3>Send Message </h3>
             <br>
               </div>
 
@@ -54,8 +54,6 @@
                   <div id="alerts"></div>
                     <br>
                     <form action="submit/" method="post" data-parsley-validate class="form-horizontal form-label-left">
-                      <input type="text" id="receipts" name="receipts" class="form-control" required placeholder="Sample@ericsson.com;"/>
-                    <br>
                       <input type="text" id="subject" name="subject" class="form-control" required placeholder="Subject:"/>
                     <br>
 
@@ -151,7 +149,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            HCI Group 06
           </div>
           <div class="clearfix"></div>
         </footer>

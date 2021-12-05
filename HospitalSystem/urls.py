@@ -30,9 +30,13 @@ urlpatterns = [
     path('logout/', home_views.logout),
     path('form/<object_type>/', table_views.form),
     path('form/<object_type>/new/', table_views.new_edit),
+    path('form/<object_type>/new2/', table_views.new_edit2),
     path('form/<object_type>/new/submit/', table_views.new_submit),
+    path('form/<object_type>/new2/submit/', table_views.new_submit2),
     path('form/<object_type>/new/delete/', table_views.new_delete),
+    path('form/<object_type>/new2/delete/', table_views.new_delete),
     path('form/<object_type>/<int:object_id>/', table_views.edit),
     path('form/<object_type>/<int:object_id>/submit/', table_views.submit),
     path('form/<object_type>/<int:object_id>/delete/', table_views.delete),
+    path('service/', home_views.service),
 ]
